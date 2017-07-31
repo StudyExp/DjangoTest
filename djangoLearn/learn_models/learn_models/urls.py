@@ -1,4 +1,4 @@
-"""djangoTest URL Configuration
+"""learn_models URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.11/topics/http/urls/
@@ -15,11 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from learn import views as learn_views  # new
 
 urlpatterns = [
-    url(r'^$', learn_views.index, name='home123'),
-    url(r'^add/(\d+)/(\d+)/$', learn_views.add2, name='add2'),
-    url(r'^add/$', learn_views.add, name='add'),  # new
     url(r'^admin/', admin.site.urls),
 ]
